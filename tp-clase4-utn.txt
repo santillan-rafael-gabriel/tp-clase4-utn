@@ -1,0 +1,116 @@
+ Trabajo Practico: clase 4 
+alumno: Santillan Rafael Gabriel 
+Dias y Horarios: martes y jueves de 19hs a 21hs
+repositorio: https://github.com/santillan-rafael-gabriel/tp-clase4-utn.git
+
+ejercicio resueltos: 
+
+1._   
+
+   import java.util.Scanner;
+
+public class ejercicio1 {
+
+	private static Scanner cs;
+
+	public static void main(String[] args) {
+		
+		cs = new Scanner(System.in);
+		
+		System.out.println("ingrese su apellido");
+		String apellido= cs.nextLine();
+		
+		System.out.println("ingrese su nombre");
+		String nombre= cs.nextLine();
+        
+		System.out.println("ingrese su edad");
+		int edad= cs.nextInt();
+		
+		System.out.println("Apellido y nombre: "+ apellido +" "+ nombre );
+		System.out.println("la edad es : "+ edad + " años");
+		
+	}
+
+}
+
+
+2._  
+      import java.util.Scanner;
+
+public class ejercicio2 {
+
+	private static Scanner cs;
+
+	public static void main(String[] args) {
+		cs = new Scanner(System.in);
+		
+		System.out.println("ingrese su apellido");
+		String apellido= cs.nextLine();
+		
+		System.out.println("ingrese su nombre");
+		String nombre= cs.nextLine();
+        
+		System.out.println("ingrese su edad");
+		int edad= cs.nextInt();
+		
+		System.out.println("Apellido y nombre: "+ apellido +" "+ nombre );
+		System.out.println("la edad es : "+ edad + " años");
+		
+		if (edad >=18) {
+			System.out.println("es mayor de edad");	
+		}else {
+			System.out.println("es menor de edad");
+		}
+		
+	}
+
+}
+
+
+3._
+
+   import java.util.Scanner;
+
+public class ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		Scanner n = new Scanner(System.in);
+		
+		System.out.println("ingrese su nombre :");
+		String cliente = n.nextLine();
+		
+		System.out.println("ingrese sector: ");
+		System.out.println("frutas");
+		System.out.println("verduras");
+		System.out.println("gaseosas");
+		String seccion = n.nextLine();
+		
+		System.out.println("ingrese nombre del producto: ");
+		String producto = n.nextLine();
+		
+		System.out.println("ingrese precio del producto: ");
+		int preciop = n.nextInt();
+		
+		System.out.println("ingrese la cantidad: ");
+	    int cant = n.nextInt();
+	    
+	    int total = preciop*cant;
+	   
+	    
+	    if (total >= 1000) {
+	       
+	       int desc= (int) (total*0.2);
+	       int desc1= (total-desc);
+	       System.out.println("precio subtotal :"+ total );
+	       System.out.println("hay descuento de 20%");
+	       System.out.println("precio total a pagar con descuento :"+ desc1);
+	     
+	    }else {
+	    	System.out.println("precio total a paga es: "+ total );
+	    	System.out.println("no hay descuento: ");
+	    }
+				
+	}
+
+}
